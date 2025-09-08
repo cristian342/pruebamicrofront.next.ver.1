@@ -7,12 +7,10 @@ import type { DocumentType } from '../../../../document-types/domain/models/Docu
 import { Grid, Box, Typography, Dialog, DialogTitle, DialogContent, DialogActions, Button, Container } from '@mui/material';
 import type { Document } from '../../../domain/models/Document.js'; // CORRECTED PATH
 import ModalMensaje from '../../../../../infrastructure/ui/components/Modals/Modalmessage.tsx';
-// No longer need to import ResultadoTipo here as it's handled by useDocuments hook
-
 // Dayjs solo para mostrar la fecha en el modal de "Ver"
 import dayjs from 'dayjs';
-import utc from 'dayjs/plugin/utc';
-import timezone from 'dayjs/plugin/timezone';
+import utc from 'dayjs/plugin/utc.js';
+import timezone from 'dayjs/plugin/timezone.js';
 import 'dayjs/locale/es';
 
 declare module 'dayjs' {
@@ -121,11 +119,6 @@ export default function DocumentsPage() {
   };
 
   // Removed local handleCloseModal as it's now managed by useDocuments hook
-  /*
-  const handleCloseModal = () => {
-    setModalState((prev) => ({ ...prev, open: false }));
-  };
-  */
 
   // Helpers para el diálogo de visualización
   const tipoDeDocumentoNombre = viewingDocument

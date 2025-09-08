@@ -21,8 +21,6 @@ const theme = createTheme({
   typography: {
     fontFamily: 'Roboto, "Helvetica Neue", Arial, sans-serif', // Using Roboto as the primary font
     // You can add more typography variants here if needed
-    // h1: { fontSize: '2.5rem' },
-    // body1: { fontSize: '1rem' },
   },
   // You can add other Material-UI theme customizations here, e.g., components, spacing, breakpoints
   components: {
@@ -37,7 +35,6 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           // Example: Customize button styles if needed
-          // textTransform: 'none', // Example: disable uppercase text transform
         },
       },
     },
