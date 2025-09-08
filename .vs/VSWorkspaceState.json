@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\domain",
+    "\\src\\domain\\models",
+    "\\src\\domain\\repositories",
+    "\\src\\infrastructure",
+    "\\src\\infrastructure\\ui",
+    "\\src\\infrastructure\\ui\\components",
+    "\\src\\infrastructure\\ui\\hooks",
+    "\\src\\infrastructure\\ui\\pages"
+  ],
+  "SelectedNode": "\\tsconfig.json",
+  "PreviewInSolutionExplorer": false
+}
