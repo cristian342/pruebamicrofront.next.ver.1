@@ -6,7 +6,11 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import ErrorIcon from '@mui/icons-material/Error';
 import WarningIcon from '@mui/icons-material/Warning';
 import InfoIcon from '@mui/icons-material/Info';
+<<<<<<< HEAD
 import { ModalMensajeProps, ResultadoTipo } from './Modalmessage.types.ts';
+=======
+import { ModalMensajeProps, ResultadoTipo } from './Modalmessage.types';
+>>>>>>> 1fd2700ab3b90e6aa27cd880ac5551ab107df76c
 
 // Componente CircularProgressWithLabel
 const CircularProgressWithLabel: React.FC<{ value: number; displayValue: number }> = ({ value, displayValue }) => {

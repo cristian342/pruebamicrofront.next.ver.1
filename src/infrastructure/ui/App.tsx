@@ -18,7 +18,7 @@ import theme from '../../theme.ts'; // Import custom theme
  * Componente principal de la aplicación.
  * Configura el enrutamiento (navegación) y la barra de navegación global.
  */
-const DocumentsPage = React.lazy(() => import('@/microfrontends/documents/infrastructure/ui/pages/DocumentsPage.tsx'));
+const DocumentsPage = React.lazy(() => import('@/microfrontends/documents/infrastructure/ui/pages/DocumentsPage.tsx').then(module => ({ default: module.default })));
 const DocumentTypeManagementPage = React.lazy(() => import('@/microfrontends/document-types/infrastructure/ui/pages/DocumentTypeManagementPage.tsx'));
 
 function App() {
