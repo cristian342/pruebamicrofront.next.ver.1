@@ -11,6 +11,7 @@ This file is the master index for the project's Memory Bank. It provides a centr
 This directory contains detailed documentation for each distinct feature or micro-frontend.
 - **[Documents Micro-frontend](functionalities/documents-microfrontend.md)**
 - **[Document Types Micro-frontend](functionalities/document-types-microfrontend.md)**
+- **[Micro-frontend Federation with Vite](functionalities/microfrontend-federation-vite.md)**
 
 ## Session & Progress Logs
 - **[Active Context](activeContext.md)**: Log of changes and decisions made during the current development session.

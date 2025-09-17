@@ -14,3 +14,8 @@ Each micro-frontend will be structured as a miniature version of the main applic
 ## State Management
 - **Local State**: Managed within each micro-frontend using React hooks (`useState`, `useReducer`).
 - **Shared State**: Managed by the shell application and passed down to micro-frontends via props or a shared context.
+
+## Module Federation Communication
+- **Exposed Modules**: Each micro-frontend will define which of its components, pages, or services are available for consumption by others. This is configured in the `rspack.config.js` file under the `exposes` property.
+- **Remote Modules**: The shell application and other micro-frontends will define the remote entry points for each micro-frontend they need to consume. This is configured in the `remotes` property.
+- **Dynamic Loading**: Remote modules are loaded at runtime, allowing for independent deployments and updates of each micro-frontend.

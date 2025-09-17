@@ -23,9 +23,10 @@
     },
     "typeRoots": [
       "./node_modules/@types",
-      "./src/types"
+      "./src/types",
+      "dayjs"
     ]
   },
-  "include": [ "src" ],
+  "include": [ "src", "src/remotes.d.ts" ],
   "exclude": [ "node_modules", "dist" ]
 }

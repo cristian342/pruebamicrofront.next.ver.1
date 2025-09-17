@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react';
 // Importa componentes de React Router DOM para manejar la navegación en la aplicación.
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import { DocumentTypeProvider } from '@/microfrontends/document-types/infrastructure/ui/context/DocumentTypeContext.tsx';
+import { DocumentTypeProvider } from 'document-types/context/DocumentTypeContext';
 // Importa componentes de Material-UI para construir la interfaz de usuario.
 import {
     AppBar, // Barra de aplicación superior
@@ -18,8 +18,8 @@ import theme from '../../theme.ts'; // Import custom theme
  * Componente principal de la aplicación.
  * Configura el enrutamiento (navegación) y la barra de navegación global.
  */
-const DocumentsPage = React.lazy(() => import('@/microfrontends/documents/infrastructure/ui/pages/DocumentsPage.tsx').then(module => ({ default: module.default })));
-const DocumentTypeManagementPage = React.lazy(() => import('@/microfrontends/document-types/infrastructure/ui/pages/DocumentTypeManagementPage.tsx'));
+const DocumentsPage = React.lazy(() => import('documents/DocumentsPage'));
+const DocumentTypeManagementPage = React.lazy(() => import('document-types/DocumentTypeManagementPage'));
 
 function App() {
     return (
